@@ -22,12 +22,14 @@ public class Transaction {
     @Column(name = "transaction_id")
     private long id ;
 
+
     @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User buyer ;
+    @JoinColumn(name = "buyer_id")  // Use a different name for the buyer join column
+    private User buyer;
+
     @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User publisher ;
+    @JoinColumn(name = "publisher_id")  // Use a different name for the publisher join column
+    private User publisher;
 
     private TransactionType transactionType;
 
