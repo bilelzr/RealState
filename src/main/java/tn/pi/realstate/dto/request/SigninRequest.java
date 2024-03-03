@@ -1,4 +1,4 @@
-package tn.pi.realstate.dao.request;
+package tn.pi.realstate.dto.request;
 
 
 import lombok.AllArgsConstructor;
@@ -10,9 +10,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class SignUpRequest {
-    private String firstName;
-    private String lastName;
+public class SigninRequest {
     private String email;
     private String password;
 }

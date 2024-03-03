@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import tn.pi.realstate.dao.request.SignUpRequest;
-import tn.pi.realstate.dao.request.SigninRequest;
-import tn.pi.realstate.dao.response.JwtAuthenticationResponse;
+import tn.pi.realstate.dto.request.SignUpRequest;
+import tn.pi.realstate.dto.request.SigninRequest;
+import tn.pi.realstate.dto.response.JwtAuthenticationResponse;
 import tn.pi.realstate.security.AuthenticationService;
 
 @RestController

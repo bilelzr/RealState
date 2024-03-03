@@ -1,4 +1,4 @@
-package tn.pi.realstate.dao.response;
+package tn.pi.realstate.dto.response;
 
 
 import lombok.AllArgsConstructor;

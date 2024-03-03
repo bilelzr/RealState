@@ -5,15 +5,15 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import tn.pi.realstate.dao.request.SignUpRequest;
-import tn.pi.realstate.dao.request.SigninRequest;
-import tn.pi.realstate.dao.response.JwtAuthenticationResponse;
+import tn.pi.realstate.dto.request.SignUpRequest;
+import tn.pi.realstate.dto.request.SigninRequest;
+import tn.pi.realstate.dto.response.JwtAuthenticationResponse;
 import tn.pi.realstate.entities.Role;
 import tn.pi.realstate.entities.User;
 import tn.pi.realstate.exceptions.UserAlreadyExistsException;
 import tn.pi.realstate.repositories.UserRepository;
 
-import static tn.pi.realstate.dao.Constants.USER_EXIST;
+import static tn.pi.realstate.dto.Constants.USER_EXIST;
 
 @Service
 @RequiredArgsConstructor

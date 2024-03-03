@@ -1,4 +1,4 @@
-package tn.pi.realstate.dao;
+package tn.pi.realstate.dto;
 
 public class Constants {
 

@@ -2,17 +2,17 @@ package tn.pi.realstate.entities;
 
 
 import jakarta.persistence.*;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
-@RequiredArgsConstructor
 @Getter
 @Setter
 @EqualsAndHashCode
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Property {
+
 
 
     @Id
@@ -20,18 +20,20 @@ public class Property {
     @SequenceGenerator(name = "property_sequence", sequenceName = "property_sequence", allocationSize = 1)
     @Column(name = "property_id")
     private long id;
-    private String Location;
 
-    private float price ;
 
+    private String location;
+
+    private float price;
+
+    private String title;
     private Status status;
 
-    private String Description;
+    private String description;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
-
 
 
 }

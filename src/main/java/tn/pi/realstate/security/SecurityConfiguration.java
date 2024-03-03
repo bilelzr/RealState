@@ -14,7 +14,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import tn.pi.realstate.security.JwtAuthenticationFilter;
 import tn.pi.realstate.services.UserService;
 
 import static org.springframework.security.config.http.SessionCreationPolicy.STATELESS;
