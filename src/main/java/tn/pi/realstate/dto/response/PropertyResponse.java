@@ -1,16 +1,13 @@
-package tn.pi.realstate.dto.request;
+package tn.pi.realstate.dto.response;
 
 import lombok.Builder;
 import lombok.Getter;
-import tn.pi.realstate.entities.Status;
-import tn.pi.realstate.entities.User;
-
+import lombok.Setter;
 
 @Getter
 @Builder
-public class AddPropertyRequest {
-
-
+@Setter
+public class PropertyResponse {
     private String location;
 
     private String title;
@@ -20,6 +17,4 @@ public class AddPropertyRequest {
     private String status;
 
     private String description;
-
-
 }
